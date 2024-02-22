@@ -1,0 +1,235 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  background: linear-gradient(#000000, #111111);
+}
+
+.logo-home .Home-btn {
+   position: absolute;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    width: auto; /* 이미지 크기에 맞게 자동으로 조정됨 */
+    top: 80px; /* 이미지 높이 조정 */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo-home .logo {
+    width: 120px; /* 이미지가 버튼 내에서 꽉 차도록 설정 */
+    height: auto; /* 이미지의 가로 세로 비율을 유지하면서 버튼에 맞게 조정 */
+}
+
+
+.joinForm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 450px;
+  padding: 30px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.joinForm h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.textForm {
+  border-bottom: 2px solid #adadad;
+  margin: 20px;
+  padding: 10px 10px;
+}
+
+.name {
+  width: 100%;
+  border:none;
+  outline:none;
+  color: #636e72;
+  font-size:16px;
+  height:25px;
+  background: none;
+}
+
+.id {
+  width: 100%;
+  border:none;
+  outline:none;
+  color: #636e72;
+  font-size:16px;
+  height:25px;
+  background: none;
+}
+
+.pw {
+  width: 100%;
+  border:none;
+  outline:none;
+  color: #636e72;
+  font-size:16px;
+  height:25px;
+  background: none;
+}
+
+
+.phoneNumber {
+  width: 100%;
+  border:none;
+  outline:none;
+  color: #636e72;
+  font-size:16px;
+  height:25px;
+  background: none;
+}
+
+.address {
+  width: 100%;
+  border:none;
+  outline:none;
+  color: #636e72;
+  font-size:16px;
+  height:25px;
+  background: none;
+}
+
+.age {
+  width: 100%;
+  border:none;
+  outline:none;
+  color: #636e72;
+  font-size:16px;
+  height:25px;
+  background: none;
+}
+
+.joinForm select {
+  cursor: pointer;
+  width: 100%;
+  border:none;
+  outline:none;
+  color: #636e72;
+  font-size:16px;
+  height: 25px;
+  background: none;
+}
+
+.joinForm button {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-left: 120px;
+  margin-top: 40px;
+  letter-spacing: 4px;
+  border: none;
+  background-color: transparent;
+}
+
+.joinForm button:hover {
+  background: #ffffff;
+  color: #000000;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ffffff,
+              0 0 25px #ffffff,
+              0 0 50px #ffffff,
+              0 0 100px #ffffff;
+}
+
+.joinForm button span {
+  position: absolute;
+  display: block;
+}
+
+.joinForm button span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ffffff);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.joinForm button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #ffffff);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.joinForm button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #ffffff);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.joinForm button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #ffffff);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}

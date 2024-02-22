@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="com.icia.drawAcademy.dao.classdao.ClassDao">
+  <insert id="class1proc" parameterType="classDto" >
+		INSERT INTO teacherName1
+		VALUES (null,#{className},#{day},#{date},#{time},#{m_name},#{m_email}
+		)
+	</insert>
+  	
+  	<update id="PlusMemberClassName" parameterType="String">
+  		UPDATE membertbl SET className = #{className} WHERE m_email = #{m_email};
+  	</update>
+  	
+  	<update id="PlusClassNameMember" parameterType="String">
+  		UPDATE teacherName1 SET m_name = #{m_name}, m_email = #{m_email} WHERE className = #{className};
+  	</update>
+  	
+  	<select id="classLimit" parameterType="classDto" resultType="Integer">
+  		SELECT COUNT(*) FROM teacherName1 WHERE className = #{className}
+  	</select>
+  	
+  </mapper>

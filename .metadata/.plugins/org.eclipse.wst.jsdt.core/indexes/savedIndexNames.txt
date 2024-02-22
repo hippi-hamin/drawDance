@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\drawDance\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+50087517.index
+1341393956.index
+3600611619.index
+4283988533.index
+2030225817.index
+1980007610.index
