@@ -3,6 +3,9 @@ html {
 }
 
 body {
+  position: relative; /* 부모 컨테이너를 상대 위치로 설정합니다. */
+  width: 100%;
+  height: 100vh;
   margin:0;
   padding:0;
   font-family: sans-serif;
@@ -10,13 +13,13 @@ body {
 }
 
 .logo-home .Home-btn {
-   position: absolute;
+    position: absolute;
     background: none;
     border: none;
     padding: 0;
     cursor: pointer;
     width: auto; /* 이미지 크기에 맞게 자동으로 조정됨 */
-    top: 80px; /* 이미지 높이 조정 */
+    top: 7%; /* 이미지 높이 조정 */
     left: 50%;
     transform: translateX(-50%);
 }
@@ -26,19 +29,33 @@ body {
     height: auto; /* 이미지의 가로 세로 비율을 유지하면서 버튼에 맞게 조정 */
 }
 
-
 .joinForm {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 450px;
   padding: 30px;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -40%);
   background: rgba(0,0,0,.5);
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0,0,0,.6);
   border: 1px solid white;
   border-radius: 10px;
+}
+
+.joinForm .textForm {
+	position: relative;
+}
+
+.joinForm .textForm #emailCheckResult {
+  width: 100%;
+  border:none;
+  outline:none;
+  text-align: center;
+  color: #fff;
+  font-size:16px;
+  height: 25px;
+  background: transparent;
 }
 
 .joinForm h2 {
@@ -58,7 +75,7 @@ body {
   width: 100%;
   border:none;
   outline:none;
-  color: #636e72;
+  color: #fff;
   font-size:16px;
   height:25px;
   background: none;
@@ -68,7 +85,7 @@ body {
   width: 100%;
   border:none;
   outline:none;
-  color: #636e72;
+  color: #fff;
   font-size:16px;
   height:25px;
   background: none;
@@ -78,7 +95,7 @@ body {
   width: 100%;
   border:none;
   outline:none;
-  color: #636e72;
+  color: #fff;
   font-size:16px;
   height:25px;
   background: none;
@@ -89,7 +106,7 @@ body {
   width: 100%;
   border:none;
   outline:none;
-  color: #636e72;
+  color: #fff;
   font-size:16px;
   height:25px;
   background: none;
@@ -99,7 +116,7 @@ body {
   width: 100%;
   border:none;
   outline:none;
-  color: #636e72;
+  color: #fff;
   font-size:16px;
   height:25px;
   background: none;
@@ -109,7 +126,7 @@ body {
   width: 100%;
   border:none;
   outline:none;
-  color: #636e72;
+  color: #fff;
   font-size:16px;
   height:25px;
   background: none;
@@ -126,6 +143,60 @@ body {
   background: none;
 }
 
+/* 사진 올리기 */
+
+.photoUpload {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #adadad;
+  margin: 20px;
+  padding: 0 0 10px 0;
+  background: none;
+  position: relative;
+}
+
+.photoUpload .profile {
+  width: auto;
+  border:none;
+  outline:none;
+  color: #636e72;
+  font-size:16px;
+  height:25px;
+  background: none;
+  margin-left: 15px;
+  margin-right: 20px;
+}
+
+.photoUpload .form-control {
+  cursor: pointer;
+  width: 100%;
+  border:none;
+  outline:none;
+  text-align: center;
+  color: #636e72;
+  font-size:16px;
+  height: 25px;
+  background: transparent;
+}
+/* 파일 선택 버튼 스타일 변경*/
+.form-control::-webkit-file-upload-button {
+  position: absolute;
+  border: 1px solid #fff;
+  right: 0;
+  cursor: pointer;
+  width: auto;
+  outline: none;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  height: 25px;
+  line-height: 25px;
+  background-color: transparent; /* 버튼 배경색을 변경합니다. */
+  border-radius: 5px; /* 버튼을 둥글게 만듭니다. */
+}
+/* 사진 올리기 끝 */
+
+/* SIGN UP 버튼 꾸미기 */
 .joinForm button {
   cursor: pointer;
   position: relative;
@@ -137,8 +208,8 @@ body {
   text-transform: uppercase;
   overflow: hidden;
   transition: .5s;
-  margin-left: 120px;
-  margin-top: 40px;
+  margin-left: 90px;
+  margin-top: 30px;
   letter-spacing: 4px;
   border: none;
   background-color: transparent;
@@ -233,3 +304,11 @@ body {
     bottom: 100%;
   }
 }
+
+/* 사진 올리기 */
+$input-group-addon-padding-y:           $input-padding-y;
+$input-group-addon-padding-x:           $input-padding-x;
+$input-group-addon-font-weight:         $input-font-weight;
+$input-group-addon-color:               $input-color;
+$input-group-addon-bg:                  var(--#{$prefix}tertiary-bg);
+$input-group-addon-border-color:        $input-border-color;
