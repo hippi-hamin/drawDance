@@ -16,7 +16,7 @@ body {
     padding: 0;
     cursor: pointer;
     width: auto; /* 이미지 크기에 맞게 자동으로 조정됨 */
-    top: 60px; /* 이미지 높이 조정 */
+    top: 20%; /* 이미지 높이 조정 */
     left: 50%;
     transform: translateX(-50%);
 }

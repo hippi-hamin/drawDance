@@ -14,16 +14,14 @@
 </head>
 <body>
 	<div class="bodyMain">
-		<div class="title">
-			INSTRUCTORS
-		</div>
+		<div class="title">INSTRUCTORS</div>
 		<div class="middle-part">
 			<p>DRAW DANCE에서</p>
 			<p>같이 춤을 그려갈 강사진을 소개합니다.</p>
 		</div>
 		<div class="headerMenu">
 			<button class="Home-btn" onclick="location.href='./'">
-				<img src="resources/images/lg.png" class="logo">
+				<img src="resources/images/logo.png" class="logo">
 			</button>
 		</div>
 		<div id="menu-container">
@@ -95,16 +93,31 @@
 			<div class="instructor1">
 				<a href="class1"> <img src="resources/images/강사 프로필 사진.PNG"
 					alt="강사1">
+					<div class="overlay">
+						- 2020 icia대학 실용무용 전공<br>
+						- 2022 icia댄스아카데미 강사<br>
+						- 2024 icia댄스아카데미 부원장
+					</div>
 				</a>
 			</div>
 			<div class="instructor2">
 				<a href="class2"> <img src="resources/images/강사 프로필 사진.PNG"
 					alt="강사2">
+					<div class="overlay">
+						- 2020 icia대학 실용무용 전공<br>
+						- 2022 icia댄스아카데미 강사<br>
+						- 2024 icia댄스아카데미 부원장
+					</div>
 				</a>
 			</div>
 			<div class="instructor3">
 				<a href="class3"> <img src="resources/images/강사 프로필 사진.PNG"
 					alt="강사3">
+					<div class="overlay">
+						- 2020 icia대학 실용무용 전공<br>
+						- 2022 icia댄스아카데미 강사<br>
+						- 2024 icia댄스아카데미 부원장
+					</div>
 				</a>
 			</div>
 		</div>
@@ -138,7 +151,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var myPageBtn = document.getElementById("myPage");
 
   var loggedInMember = '<%=session.getAttribute("login")%>';
-  
+
 		console.log("세션에 저장된 값: " + loggedInMember);
 		// 여기서 로그인 여부를 확인하고 그에 따라 버튼을 표시하거나 숨깁니다.
 		var isLoggedIn = loggedInMember !== 'null' && loggedInMember !== '';
@@ -155,6 +168,11 @@ document.addEventListener("DOMContentLoaded", function() {
 			myPageBtn.style.display = "none";
 		}
 	});
+	document.querySelector('.instructor1').addEventListener('mouseover',
+			function() {
+				// 마우스 오버되었을 때 실행되는 코드
+				// 예를 들어, 추가적인 동작이 필요하다면 여기에 작성
+			});
 </script>
 <script>
 	console.log("classLimitB 값: ${classLimitB}");

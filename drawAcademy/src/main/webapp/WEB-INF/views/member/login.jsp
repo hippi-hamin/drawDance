@@ -32,7 +32,11 @@
 				</div>
 
 				<button type="submit">
-					<span></span> <span></span> <span></span> <span></span> LOGIN
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					LOGIN
 				</button>
 			</form>
 		</div>
