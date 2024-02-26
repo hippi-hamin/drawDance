@@ -41,7 +41,7 @@
             </button>
             <br> <br> <br>
             <button class="INSTRUCTORS-btn"
-               onclick="location.href='./INSTRUCTORS'">
+               onclick="location.href='./instructors'">
                <p>INSTRUCTORS</p>
             </button>
             <br> <br> <br>
@@ -52,7 +52,6 @@
             <button class="CONTACT-btn" onclick="location.href='./CONTACT'">
                <p>CONTACT</p>
             </button>
-            <br> <br> <br> <br> <br> <br> <br>
             <br> <br> <br> <br> <br> <br> <br>
             <div class="smallWord">
                <button id="loginBtn" class="LOGIN-btn" onclick="location.href='./login'">
@@ -70,7 +69,7 @@
             	<small>MY PAGE</small>
          		</button>
             </div>
-            <br> <br> <br>
+            <br> <br>
             <div id="icon-container2">
                <a href="https://www.facebook.com"> <img
                   src="resources/images/facebookIcon.png" class="facebook">

@@ -5,8 +5,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>수강신청 사이트</title>
-<link rel="stylesheet" href="resources/css/classpage.css">
+<title>Insert title here</title>
+<link rel="stylesheet" href="resources/css/instructors.css">
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"
 	integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
 	crossorigin="anonymous"></script>
@@ -15,11 +15,11 @@
 <body>
 	<div class="bodyMain">
 		<div class="title">
-			CLASS
+			INSTRUCTORS
 		</div>
 		<div class="middle-part">
 			<p>DRAW DANCE에서</p>
-			<p>같이 춤을 그려갈 강사진을 선택하세요.</p>
+			<p>같이 춤을 그려갈 강사진을 소개합니다.</p>
 		</div>
 		<div class="headerMenu">
 			<button class="Home-btn" onclick="location.href='./'">
