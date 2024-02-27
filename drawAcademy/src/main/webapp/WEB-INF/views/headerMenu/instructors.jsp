@@ -13,6 +13,7 @@
 
 </head>
 <body>
+<!----------------------------------- 헤더메뉴 기능 시작----------------------------------->
 	<div class="bodyMain">
 		<div class="title">INSTRUCTORS</div>
 		<div class="middle-part">
@@ -21,7 +22,7 @@
 		</div>
 		<div class="headerMenu">
 			<button class="Home-btn" onclick="location.href='./'">
-				<img src="resources/images/logo.png" class="logo">
+				<img src="resources/images/RealLOGO.png" class="logo">
 			</button>
 		</div>
 		<div id="menu-container">
@@ -89,6 +90,7 @@
 				src="resources/images/instagramIcon.png" class="instagram">
 			</a>
 		</div>
+<!----------------------------------- 헤더메뉴 기능 끝----------------------------------->
 		<div class="instructor-container">
 			<div class="instructor1">
 				<a href="class1"> <img src="resources/images/강사 프로필 사진.PNG"
@@ -168,8 +170,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			myPageBtn.style.display = "none";
 		}
 	});
-	document.querySelector('.instructor1').addEventListener('mouseover',
-			function() {
+	document.querySelector('.instructor1').addEventListener('mouseover',function() {
 				// 마우스 오버되었을 때 실행되는 코드
 				// 예를 들어, 추가적인 동작이 필요하다면 여기에 작성
 			});

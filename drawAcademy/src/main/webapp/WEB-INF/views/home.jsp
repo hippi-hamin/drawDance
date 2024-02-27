@@ -25,7 +25,7 @@
 	<div class="bodyMain">
 		<div class="headerMenu">
 			<button class="Home-btn" onclick="location.href='./'">
-				<img src="resources/images/logo.png" class="logo">
+				<img src="resources/images/RealLOGO.png" class="logo">
 			</button>
 		</div>
 		<div id="menu-container">
@@ -36,7 +36,7 @@
 					<p>HOME</p>
 				</button>
 				<br> <br> <br>
-				<button class="ABOUT-btn" onclick="location.href='./about'">
+				<button class="ABOUT-btn" onclick="location.href='./Test'">
 					<p>ABOUT</p>
 				</button>
 				<br> <br> <br>
@@ -96,7 +96,7 @@
 		<div class="video-container">
 			<video id="video1" autoplay muted loop>
 				<!-- autoplay : 자동재생, muted : 음소거, loop : 끝난 후 반복재생 <video>요소 기능 -->
-				<source src="resources/video/nozeTest.mp4" type="video/mp4">
+				<source src="resources/video/RealVideo.mp4" type="video/mp4">
 			</video>
 		</div>
 	</div>

@@ -36,6 +36,13 @@ public class HomeController {
 		return "home";
 
 	}
+	
+	@GetMapping("Test")
+	public String about() {
+		log.info("about()");
+
+		return "Test";
+	}
 
 	@GetMapping("instructors")
 	public String instructors() {

@@ -38,7 +38,7 @@ body {
 	padding: 20px; /* 내부 여백 설정 (예시) */
 	box-sizing: border-box; /* 패딩이 포함된 전체 너비/높이 계산 */
 	color: #ffffff;
-	font-size: 80px;
+	font-size: 70px;
 	font-weight: bold;
 	margin: 5%;
 }
@@ -54,7 +54,7 @@ body {
 }
 
 .headerMenu .logo {
-	width: 120px; /* 이미지가 버튼 내에서 꽉 차도록 설정 */
+	width: 130px; /* 이미지가 버튼 내에서 꽉 차도록 설정 */
 	height: auto; /* 이미지의 가로 세로 비율을 유지하면서 버튼에 맞게 조정 */
 }
 
@@ -167,3 +167,94 @@ body {
 	width: 300px;
 	height: 300px;
 }
+
+/* 달력 만들기
+.calendar-Container {
+	width: 500px;
+	height: 700px;
+	padding: 20px;
+	background-color: whitesmoke;
+}
+
+.calendar-Container img {
+	width: 250px;
+	height: 150px;
+}
+
+.calendar-Contaier .calendar-Month {
+	height: 60px;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 10px;	
+}
+
+.calendar-Container h1, h3 {
+	margin: 0;
+}
+
+.calendar-Container .calendar-Date table {
+	width: 500px;
+	height: 300px;
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+
+.calendar-Container tbody {
+	border-style: solid;
+	border-color: #eec0c6;
+	vertical-align: top;
+}
+
+.calendar-Container tbody td {
+	border-style: solid;
+	border-color: #eec0c6;
+}
+
+.calendar-Container tbody td:nth-child(6), th:nth-child(6) {
+	color:rgb(32, 126, 234);
+}
+
+.calendar-Container tbody td:nth-last-child(1), th:nth-last-child(1) {
+	color:rgb(255, 72, 0);
+}
+
+.calendar-Container .class-date {
+	background-color: rgb(248, 248, 108);
+}
+
+.calendar-Container .holiday {
+	font-size: 10px;
+	color: red;
+}
+
+.calendar-Container a {
+	font-size: 10px;
+	text-decoration: none;
+}
+
+.calendar-Container td:hover:not(#class-start) {
+	font-size: 30px;
+}
+
+.calendar-Container #class-start:hover {
+	font-weight: bold;
+}
+
+.calendar-Container .calendar-logo{
+	display: flex;
+	justify-content: center;
+}
+
+.calendar-Container #logo {
+	width: 30px;
+	height: 30px;
+	margin-top: 5px;
+	border-radius: 50px;
+}
+*/
+
+
+
+
+
+

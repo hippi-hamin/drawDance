@@ -24,7 +24,7 @@
 <body>
 	<div class="logo-home">
 		<button class="Home-btn" onclick="location.href='./'">
-			<img src="resources/images/lg.png" class="logo">
+			<img src="resources/images/RealLOGO.png" class="logo">
 		</button>
 	</div>
 	<form action="signUpProc" method="post" enctype="multipart/form-data"
@@ -66,7 +66,11 @@
 		</div>
 		<!-- 사진 올리기 끝 --> -->
 		<button type="submit">
-			<span></span> <span></span> <span></span> <span></span> SIGN UP
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			SIGN UP
 		</button>
 	</form>
 </body>
